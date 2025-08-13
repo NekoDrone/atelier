@@ -4,6 +4,7 @@
   # "wow this is hacky" - robin and isabel
   inputs,
   self ? inputs.self,
+  atelierVersion ? self.shortRev or self.dirtyShortRev or "unknown",
 }:
 let
   inherit (inputs) gift-wrap;
@@ -13,7 +14,7 @@ in
     # pretentious i know but this is my neovim config i can do whatever i want
     pname = "atelier";
 
-    versionSuffix = self.shortRev or self.dirtyShortRev or "unknown";
+    versionSuffix = atelierVersion;
 
     aliases = [
       "vi"
