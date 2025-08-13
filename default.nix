@@ -28,7 +28,12 @@ in
     startPlugins = with pkgs.vimPlugins; [
       nvim-treesitter.withAllGrammars
       nvim-lspconfig
+      lz-n
+      catppuccin-nvim
     ];
 
+    # optPlugins = with pkgs.vimPlugins; [
+    #   catppuccin-nvim
+    # ];
   };
 }
