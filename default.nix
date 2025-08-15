@@ -29,11 +29,20 @@ in
       nvim-treesitter.withAllGrammars
       nvim-lspconfig
       lz-n
+      none-ls-nvim
       catppuccin-nvim
+      plenary-nvim
+      nui-nvim
+      neo-tree-nvim
     ];
 
     # optPlugins = with pkgs.vimPlugins; [
     #   catppuccin-nvim
     # ];
+
+    extraPackages = with pkgs; [
+      stylua
+      prettier
+    ];
   };
 }
