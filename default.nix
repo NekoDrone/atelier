@@ -43,7 +43,7 @@ in
 
     extraPackages = with pkgs; [
       stylua
-      prettier
+      prettierd
     ];
   };
 }
