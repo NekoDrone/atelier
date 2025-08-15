@@ -1,3 +1,4 @@
+require("atelier.config.disables")
 require("atelier.config.keybinds")
 require("lz.n").load("atelier.plugins")
 
