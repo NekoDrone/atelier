@@ -1,7 +1,13 @@
 return {
-    "nvim-web-devicons",
+    "mini.icons",
     lazy = false,
     after = function()
-        require("nvim-web-devicons").setup({})
+        require("mini.icons").setup({
+            -- extension = {
+            --     lua = {
+            --         glyph = "",
+            --     },
+            -- },
+        })
     end,
 }

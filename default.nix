@@ -34,7 +34,7 @@ in
       plenary-nvim
       nui-nvim
       neo-tree-nvim
-      nvim-web-devicons
+      mini-icons
     ];
 
     # optPlugins = with pkgs.vimPlugins; [
