@@ -10,6 +10,12 @@ return {
                     filtered_items = {
                         visible = true,
                         hide_dotfiles = false,
+                        hide_gitignored = false,
+                        hide_hidden = false,
+                        never_show = {
+                            ".DS_Store",
+                            ".git",
+                        },
                     },
                 },
                 hijack_netrw_behavior = "open_current",
@@ -39,13 +45,12 @@ return {
                             end
                         end,
 
-			-- this part is to make my linter happy. these are defaults.
-			default = "*",
-			folder_empty = "",
-			folder_empty_open = "",
-			folder_open = "",
-			folder_closed = "",
-
+                        -- this part is to make my linter happy. these are defaults.
+                        default = "*",
+                        folder_empty = "",
+                        folder_empty_open = "",
+                        folder_open = "",
+                        folder_closed = "",
                     },
                 },
             })
