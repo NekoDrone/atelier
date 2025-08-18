@@ -46,6 +46,8 @@ in
       stylua
       prettierd
       lua-language-server
+      ripgrep
+      tree-sitter
     ];
   };
 }
