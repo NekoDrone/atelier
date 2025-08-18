@@ -38,6 +38,14 @@ return {
                                 icon.highlight = hl
                             end
                         end,
+
+			-- this part is to make my linter happy. these are defaults.
+			default = "*",
+			folder_empty = "",
+			folder_empty_open = "",
+			folder_open = "",
+			folder_closed = "",
+
                     },
                 },
             })
