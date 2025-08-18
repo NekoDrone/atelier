@@ -35,6 +35,7 @@ in
       nui-nvim
       neo-tree-nvim
       mini-icons
+      lazydev-nvim
     ];
 
     # optPlugins = with pkgs.vimPlugins; [
@@ -44,6 +45,7 @@ in
     extraPackages = with pkgs; [
       stylua
       prettierd
+      lua-language-server
     ];
   };
 }
