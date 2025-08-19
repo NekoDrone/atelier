@@ -64,6 +64,7 @@ in
       lua-language-server
       ripgrep
       tree-sitter
+      nixfmt
     ];
   };
 }
