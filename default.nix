@@ -12,6 +12,11 @@ let
   inherit (inputs) gift-wrap;
   inherit (lib) attrValues filterAttrs elem;
 
+  # declare treesitter grammars here.
+  # you can see the list of available grammars here:
+  # https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/applications/editors/vim/plugins/nvim-treesitter/generated.nix
+  #
+  # don't forget to also enable the appropriate file type at ./config/lua/atelier/config/treesitter.lua
   treesitterGrammars = [
     "lua"
     "nix"
