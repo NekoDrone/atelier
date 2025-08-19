@@ -39,6 +39,7 @@ in
 
     userConfig = ./config;
 
+    # TODO: move plugins not absolutely necessary for initial render to optPlugins
     startPlugins = with pkgs.vimPlugins; [
       nvim-treesitter
       nvim-lspconfig
