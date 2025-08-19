@@ -35,6 +35,7 @@ in
     userConfig = ./config;
 
     startPlugins = with pkgs.vimPlugins; [
+      nvim-treesitter
       nvim-lspconfig
       lz-n
       none-ls-nvim
