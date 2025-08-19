@@ -1,13 +1,22 @@
 {
   pkgs,
+  lib,
 
   # "wow this is hacky" - robin and isabel
   inputs,
   self ? inputs.self,
   atelierVersion ? self.shortRev or self.dirtyShortRev or "unknown",
+  ...
 }:
 let
   inherit (inputs) gift-wrap;
+  inherit (lib) attrValues filterAttrs elem;
+
+  treesitterGrammars = [
+    "lua"
+    "nix"
+  ];
+
 in
 {
   default = gift-wrap.legacyPackages.${pkgs.system}.wrapNeovim {
@@ -26,7 +35,6 @@ in
     userConfig = ./config;
 
     startPlugins = with pkgs.vimPlugins; [
-      nvim-treesitter.withAllGrammars
       nvim-lspconfig
       lz-n
       none-ls-nvim
@@ -36,13 +44,14 @@ in
       neo-tree-nvim
       mini-icons
       lazydev-nvim
-    ];
+    ] ++ (attrValues (filterAttrs (name: _: elem name treesitterGrammars) nvim-treesitter.grammarPlugins));
 
     # optPlugins = with pkgs.vimPlugins; [
     #   catppuccin-nvim
     # ];
 
     extraPackages = with pkgs; [
+      nodejs_24
       stylua
       prettierd
       lua-language-server

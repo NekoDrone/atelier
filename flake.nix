@@ -22,7 +22,7 @@
       forAllSystems =
         f: lib.genAttrs lib.systems.flakeExposed (system: f nixpkgs.legacyPackages.${system});
 
-      generatedPackages = pkgs: import ./default.nix { inherit pkgs inputs; };
+      generatedPackages = pkgs: import ./default.nix { inherit pkgs inputs lib; };
 
       atelier = forAllSystems (generatedPackages);
 
