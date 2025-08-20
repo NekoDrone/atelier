@@ -16,8 +16,18 @@ return {
                 },
                 float = {
                     solid = true,
+                    transparent = false,
                 },
                 term_colors = true,
+                custom_highlights = function(colors)
+                    return {
+                        ["@property.lua"] = { fg = colors.peach },
+                        ["@variable.lua"] = { fg = colors.peach },
+                        ["@boolean.lua"] = { fg = colors.blue },
+                        ["@number.lua"] = { fg = colors.blue },
+                        ["@variable.member.lua"] = { fg = colors.blue },
+                    }
+                end,
             })
         end,
     },
