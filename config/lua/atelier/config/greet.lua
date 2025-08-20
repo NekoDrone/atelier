@@ -24,16 +24,18 @@ dashboard.section.buttons.val = {
     dashboard.button("SPC G", " Open commits menu..."),
 }
 
+local motd = require("atelier.lib.motd").get_random_formatted_motd()
+
 dashboard.section.footer.val = {
     "",
     "",
     "",
-    "be kind, for the world is not. be life, for the world is deadly.",
+    motd.message,
     " ",
-    "                                      - serenity, the goldweaver",
+    motd.author,
     " ",
     " ",
-    "                      plugins loaded: <tbd>                    ",
+    require("atelier.lib.motd").pad_center(" plugins loaded: <tbd>", #motd.message),
 }
 
 return dashboard.opts
