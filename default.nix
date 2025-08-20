@@ -51,6 +51,7 @@ in
       neo-tree-nvim
       mini-icons
       lazydev-nvim
+      alpha-nvim
     ] ++ (attrValues (filterAttrs (name: _: elem name treesitterGrammars) nvim-treesitter.grammarPlugins));
 
     # optPlugins = with pkgs.vimPlugins; [
