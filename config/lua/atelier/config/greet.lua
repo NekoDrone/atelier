@@ -2,6 +2,7 @@ local dashboard = require("alpha.themes.dashboard")
 
 dashboard.section.header.val = {
     "",
+    " 𝔀𝓮𝓵𝓬𝓸𝓶𝓮 𝓽𝓸",
     "",
     "",
     " █████╗ ████████╗███████╗██╗     ██╗███████╗██████╗ ",
@@ -12,6 +13,7 @@ dashboard.section.header.val = {
     "╚═╝  ╚═╝   ╚═╝   ╚══════╝╚══════╝╚═╝╚══════╝╚═╝  ╚═╝",
     "",
     "",
+    "                     - 𝓫𝔂 𝓼𝓮𝓻𝓮𝓷𝓲𝓽𝔂, 𝓽𝓱𝓮 𝓰𝓸𝓵𝓭𝔀𝓮𝓪𝓿𝓮𝓻 󰉊",
     "",
 }
 
@@ -28,7 +30,7 @@ dashboard.section.footer.val = {
     "",
     "be kind, for the world is not. be life, for the world is deadly.",
     " ",
-    "                                     - serenity, your goldweaver",
+    "                                      - serenity, the goldweaver",
     " ",
     " ",
     "                      plugins loaded: <tbd>                    ",
