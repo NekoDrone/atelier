@@ -28,6 +28,17 @@ return {
                         ["@variable.member.lua"] = { fg = colors.blue },
                     }
                 end,
+                integrations = {
+                    native_lsp = {
+                        enabled = true,
+                        underlines = {
+                            errors = { "undercurl" },
+                            hints = { "underdotted" },
+                            warnings = { "undercurl" },
+                            information = { "underdotted" },
+                        },
+                    },
+                },
             })
         end,
     },
