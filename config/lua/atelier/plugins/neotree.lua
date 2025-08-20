@@ -17,8 +17,8 @@ return {
                             ".git",
                         },
                     },
+                    hijack_netrw_behavior = "disabled",
                 },
-                hijack_netrw_behavior = "open_current",
                 default_component_configs = {
                     -- taken from https://github.com/comfysage/ivy/blob/main/config/lua/ivy/plugins/init.lua#L14-L36
                     -- thank you roro you're so cracked and so smart ily
