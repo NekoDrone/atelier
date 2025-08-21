@@ -39,7 +39,7 @@ function M.get_random()
 end
 
 local function pad_right(str, target_length)
-    target_length = target_length or 100
+    target_length = target_length or 25
     local current_length = string.len(str)
 
     if current_length >= target_length then
@@ -51,7 +51,7 @@ local function pad_right(str, target_length)
 end
 
 local function pad_left(str, target_length)
-    target_length = target_length or 100
+    target_length = target_length or 25
     local current_length = string.len(str)
 
     if current_length >= target_length then
@@ -63,7 +63,7 @@ local function pad_left(str, target_length)
 end
 
 function M.pad_center(str, target_length)
-    target_length = target_length or 100
+    target_length = target_length or 25
     local current_length = string.len(str)
 
     if current_length >= target_length then
@@ -81,8 +81,8 @@ function M.get_formatted_motd(motd)
     local target_length = #motd.message + 2
 
     return {
-        message = pad_right(motd.message, target_length),
-        author =  pad_left("- " .. motd.author, target_length),
+        message = target_length < 25 and M.pad_center(motd.message, 25) or pad_right(motd.message, target_length),
+        author = pad_left("- " .. motd.author, target_length < 25 and 25 or target_length),
     }
 end
 

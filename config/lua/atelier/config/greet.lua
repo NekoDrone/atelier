@@ -31,7 +31,6 @@ dashboard.section.footer.val = {
     "",
     "",
     motd.message,
-    " ",
     motd.author,
     " ",
     " ",
