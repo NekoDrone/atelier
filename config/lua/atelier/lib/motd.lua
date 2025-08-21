@@ -226,6 +226,10 @@ local motds = {
         message = "are we there yet",
         author = "hotsocket",
     },
+    {
+        message = "and then somebody somewhere finds, the warmth of summer in the songs you write.",
+        author = "porter robinson",
+    },
 }
 
 function M.get_random()
