@@ -222,6 +222,10 @@ local motds = {
         message = "be unstoppable.",
         author = "serenity",
     },
+    {
+        message = "are we there yet",
+        author = "hotsocket",
+    },
 }
 
 function M.get_random()
