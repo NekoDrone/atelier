@@ -54,9 +54,10 @@ in
       alpha-nvim
     ] ++ (attrValues (filterAttrs (name: _: elem name treesitterGrammars) nvim-treesitter.grammarPlugins));
 
-    # optPlugins = with pkgs.vimPlugins; [
-    #   catppuccin-nvim
-    # ];
+    optPlugins = with pkgs.vimPlugins; [
+      indent-blankline-nvim
+      rainbow-delimiters-nvim
+    ];
 
     extraPackages = with pkgs; [
       nodejs_24
