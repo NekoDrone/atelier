@@ -230,6 +230,10 @@ local motds = {
         message = "and then somebody somewhere finds, the warmth of summer in the songs you write.",
         author = "porter robinson",
     },
+    {
+        message = "to all of our sisters who did not make it. may we carry the light of their torch into another day.",
+        author = "katie t.",
+    },
 }
 
 function M.get_random()
