@@ -38,6 +38,9 @@ return {
                             information = { "underdotted" },
                         },
                     },
+                    telescope = {
+                        enabled = false,
+                    },
                 },
             })
         end,

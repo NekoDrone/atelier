@@ -64,6 +64,7 @@ in
       rainbow-delimiters-nvim
       gitsigns-nvim
       toggleterm-nvim
+      telescope-nvim
     ];
 
     extraPackages = with pkgs; [
