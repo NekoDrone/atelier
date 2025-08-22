@@ -19,5 +19,10 @@ return {
                 set_terminal_keymaps()
             end,
         })
+
+        vim.api.nvim_create_autocmd("TermClose", {
+            pattern = "*",
+            command = "Neotree",
+        })
     end,
 }
