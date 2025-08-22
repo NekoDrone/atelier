@@ -18,10 +18,9 @@ dashboard.section.header.val = {
 }
 
 dashboard.section.buttons.val = {
-    dashboard.button("CTRL n", " New file..."),
-    dashboard.button("SPC eq", " Open file browser..."),
-    dashboard.button("CTRL f", " Search directory..."),
-    dashboard.button("SPC GG", " Open commits menu..."),
+    dashboard.button("SPC eq", "  Open file browser..."),
+    dashboard.button("CTRL f", "  Search directory..."),
+    dashboard.button("SPC GG", "  Open commits menu..."),
 }
 
 local motd_lib = require("atelier.lib.motd")
