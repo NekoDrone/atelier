@@ -58,6 +58,7 @@ in
       indent-blankline-nvim
       rainbow-delimiters-nvim
       gitsigns-nvim
+      toggleterm-nvim
     ];
 
     extraPackages = with pkgs; [
