@@ -10,7 +10,7 @@
 }:
 let
   inherit (inputs) gift-wrap;
-  inherit (lib) attrValues filterAttrs elem;
+  inherit (lib) map; 
 
   # declare treesitter grammars here.
   # you can see the list of available grammars here:
@@ -20,7 +20,12 @@ let
   treesitterGrammars = [
     "lua"
     "nix"
+    "vim"
   ];
+
+  my_treesitter = pkgs.vimPlugins.nvim-treesitter.withPlugins (
+    p: map (x: p."${x}") treesitterGrammars
+  );
 
 in
 {
@@ -41,7 +46,7 @@ in
 
     # TODO: move plugins not absolutely necessary for initial render to optPlugins
     startPlugins = with pkgs.vimPlugins; [
-      nvim-treesitter
+      my_treesitter
       nvim-lspconfig
       lz-n
       none-ls-nvim
@@ -52,7 +57,7 @@ in
       mini-icons
       lazydev-nvim
       alpha-nvim
-    ] ++ (attrValues (filterAttrs (name: _: elem name treesitterGrammars) nvim-treesitter.grammarPlugins));
+    ];
 
     optPlugins = with pkgs.vimPlugins; [
       indent-blankline-nvim
