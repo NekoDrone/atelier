@@ -57,6 +57,7 @@ in
     optPlugins = with pkgs.vimPlugins; [
       indent-blankline-nvim
       rainbow-delimiters-nvim
+      gitsigns-nvim
     ];
 
     extraPackages = with pkgs; [
