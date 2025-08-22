@@ -65,6 +65,7 @@ in
       gitsigns-nvim
       toggleterm-nvim
       telescope-nvim
+      blink-cmp
     ];
 
     extraPackages = with pkgs; [
