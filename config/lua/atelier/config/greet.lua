@@ -23,6 +23,9 @@ dashboard.section.buttons.val = {
     dashboard.button("SPC GG", "  Open commits menu..."),
 }
 
+-- completly unecessary, i just like having a time readout here.
+-- perf impact should be minimal, but the string concats are gonna be hellish to maintain.
+
 local motd_lib = require("atelier.lib.motd")
 
 local motd = motd_lib.get_random_formatted_motd()
