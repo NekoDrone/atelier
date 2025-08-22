@@ -10,7 +10,7 @@
 }:
 let
   inherit (inputs) gift-wrap;
-  inherit (lib) map; 
+  inherit (lib) map;
 
   # declare treesitter grammars here.
   # you can see the list of available grammars here:
@@ -44,23 +44,22 @@ in
     ];
 
     userConfig = ./config;
-
-    # TODO: move plugins not absolutely necessary for initial render to optPlugins
+ 
     startPlugins = with pkgs.vimPlugins; [
+      plenary-nvim
+      nui-nvim
       my_treesitter
       nvim-lspconfig
       lz-n
-      none-ls-nvim
-      catppuccin-nvim
-      plenary-nvim
-      nui-nvim
       neo-tree-nvim
-      mini-icons
-      lazydev-nvim
-      alpha-nvim
     ];
 
     optPlugins = with pkgs.vimPlugins; [
+      none-ls-nvim
+      catppuccin-nvim
+      mini-icons
+      lazydev-nvim
+      alpha-nvim
       indent-blankline-nvim
       rainbow-delimiters-nvim
       gitsigns-nvim
