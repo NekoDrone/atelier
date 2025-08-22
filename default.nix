@@ -21,6 +21,7 @@ let
     "lua"
     "nix"
     "vim"
+    "bash"
   ];
 
   my_treesitter = pkgs.vimPlugins.nvim-treesitter.withPlugins (

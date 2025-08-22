@@ -6,6 +6,7 @@ vim.api.nvim_create_autocmd("FileType", {
         "lua",
         "nix",
         "vim",
+        "bash"
     },
     callback = function()
         vim.treesitter.start()
