@@ -119,7 +119,7 @@ local motds = {
         author = "unknown",
     },
     {
-        message = "now much chuck would a chuckwood wood if a chuckwood would wood chuck",
+        message = "how much chuck would a chuckwood wood if a chuckwood would wood chuck",
         author = "em",
     },
     {
