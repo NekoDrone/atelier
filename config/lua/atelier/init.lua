@@ -7,5 +7,6 @@ require("lz.n").load("atelier.plugins")
 
 require("atelier.config.theme")
 require("atelier.config.treesitter")
+require("atelier.config.lazygit")
 
 vim.notify("waho atelier")

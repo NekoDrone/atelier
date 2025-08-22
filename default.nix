@@ -69,6 +69,7 @@ in
       ripgrep
       tree-sitter
       nixfmt
+      lazygit
     ];
   };
 }

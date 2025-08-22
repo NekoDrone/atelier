@@ -21,7 +21,7 @@ dashboard.section.buttons.val = {
     dashboard.button("CTRL n", " New file..."),
     dashboard.button("SPC eq", " Open file browser..."),
     dashboard.button("CTRL f", " Search directory..."),
-    dashboard.button("SPC G", " Open commits menu..."),
+    dashboard.button("SPC GG", " Open commits menu..."),
 }
 
 local motd = require("atelier.lib.motd").get_random_formatted_motd()
