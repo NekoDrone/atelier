@@ -1,6 +1,6 @@
 return {
     "toggleterm.nvim",
-    -- event = "DeferredUIEnter",
+    -- event = "VimEnter",
     after = function()
         require("toggleterm").setup()
 

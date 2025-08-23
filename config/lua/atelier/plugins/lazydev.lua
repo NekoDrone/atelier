@@ -1,9 +1,6 @@
 return {
-    {
-        "lazydev.nvim",
-        -- event = "DeferredUIEnter",
-        after = function()
-            require("lazydev").setup()
-        end,
-    },
+    "lazydev.nvim",
+    after = function()
+        require("lazydev").setup()
+    end,
 }
