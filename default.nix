@@ -52,6 +52,7 @@ in
       nvim-lspconfig
       lz-n
       neo-tree-nvim
+      lualine-nvim
     ];
 
     optPlugins = with pkgs.vimPlugins; [
