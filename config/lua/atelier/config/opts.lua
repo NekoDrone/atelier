@@ -7,3 +7,6 @@ vim.o.termguicolors = true
 -- show line numbers and make current line absolute, other lines relative
 vim.opt.number = true
 vim.opt.relativenumber = true
+
+-- winborder
+vim.o.winborder = "rounded"

@@ -15,7 +15,7 @@ return {
                     conditionals = {},
                 },
                 float = {
-                    solid = true,
+                    solid = false,
                     transparent = false,
                 },
                 term_colors = true,
