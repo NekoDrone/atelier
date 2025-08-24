@@ -4,5 +4,7 @@ return {
     after = function()
         local iconsConfig = require("atelier.config.icons")
         require("mini.icons").setup(iconsConfig)
+
+        MiniIcons.mock_nvim_web_devicons()
     end,
 }
