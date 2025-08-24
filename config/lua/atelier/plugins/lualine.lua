@@ -42,10 +42,9 @@ return {
         lualine_theme.visual.a.bg = catppuccin.blue
         lualine_theme.visual.b.fg = catppuccin.blue
 
-
         require("lualine").setup({
             options = {
-                theme = lualine_theme
+                theme = lualine_theme,
             },
             sections = {
                 lualine_a = {
@@ -68,11 +67,6 @@ return {
                     },
                 },
                 lualine_b = {
-                    {
-                        "hostname",
-                        cond = not_neotree,
-                        fmt = append_atelier,
-                    },
                     "branch",
                     {
                         "diff",
@@ -84,6 +78,12 @@ return {
                     },
                 },
                 lualine_c = {
+                    {
+                        "hostname",
+                        cond = not_neotree,
+                        fmt = append_atelier,
+                    },
+
                     {
                         "filename",
                         fmt = format_filename_pretty,
