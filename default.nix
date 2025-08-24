@@ -70,6 +70,7 @@ in
       blink-cmp
       nvim-autopairs
       dropbar-nvim
+      refactoring-nvim
     ];
 
     extraPackages = with pkgs; [
