@@ -5,7 +5,7 @@ return {
         local function format_filename_pretty(str)
             local filetype = vim.bo.filetype
             if filetype == "neo-tree" then
-                return " Atelier"
+                return "✨ Atelier"
             end
 
             if filetype == "alpha" then
