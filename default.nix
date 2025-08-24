@@ -68,6 +68,7 @@ in
       telescope-nvim
       blink-cmp
       nvim-autopairs
+      dropbar-nvim
     ];
 
     extraPackages = with pkgs; [
