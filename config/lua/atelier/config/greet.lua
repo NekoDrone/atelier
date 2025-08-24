@@ -35,7 +35,7 @@ local current_day_name = os.date("%A")
 local current_month_name = os.date("%B")
 
 local is_am = current_date.hour < 12
-local current_hour = is_am and current_date.hour or (current_date.hour - 12)
+local current_hour = is_am and current_date.hour or (current_date.hour == 12 and 12 or current_date.hour - 12)
 local greetings = is_am and "good morning" or (current_hour < 6 and "good afternoon" or "good evening")
 
 local indicator_suffixes = {
