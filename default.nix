@@ -53,6 +53,7 @@ in
       lz-n
       neo-tree-nvim
       lualine-nvim
+      fidget-nvim
     ];
 
     optPlugins = with pkgs.vimPlugins; [
