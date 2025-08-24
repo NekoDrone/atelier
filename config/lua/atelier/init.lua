@@ -8,5 +8,6 @@ require("atelier.config.commands")
 require("atelier.config.theme")
 require("atelier.config.treesitter")
 require("atelier.config.lazygit")
+require("atelier.config.ui")
 
 vim.notify("waho atelier")
