@@ -237,6 +237,12 @@ local motds = {
 }
 
 function M.get_random()
+    -- not so random because i should be told to go sleep.
+    local now = os.date("*t")
+    if now.hour > 0 and now.hour <= 7 then
+        return motds[26]
+    end
+
     math.randomseed(os.time())
     local random_index = math.random(1, #motds)
     return motds[random_index]
