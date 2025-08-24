@@ -6,7 +6,7 @@ return {
             keymap = {
                 ["<Tab>"] = { "accept", "fallback" },
                 ["<S-Tab>"] = { "select_next", "fallback" },
-                ["<CR>"] = { "accept_and_enter", "fallback" },
+                ["<CR>"] = { "accept", "fallback" },
             },
             completion = {
                 menu = {
@@ -42,7 +42,7 @@ return {
                                     return "[" .. ctx.source_name .. "]"
                                 end,
                                 highlight = "BlinkCmpSource",
-                            }, 
+                            },
                         },
                         columns = {
                             { "kind_icon", "label", "label_description", gap = 1 },
@@ -64,6 +64,10 @@ return {
                         },
                     },
                 },
+            },
+            cmdline = {
+                keymap = { preset = "inherit" },
+                completion = { menu = { auto_show = true } },
             },
         })
     end,
