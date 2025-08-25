@@ -60,6 +60,7 @@ in
         neo-tree-nvim
         lualine-nvim
         fidget-nvim
+        bufferline-nvim
       ]
       ++ (with atelierPlugins; [
         beacon-nvim
