@@ -37,7 +37,6 @@ vim.keymap.set(
 )
 
 -- toggleterm
-function set_terminal_keymaps()
 local function set_terminal_keymaps()
     -- TODO: shift to config/keybinds.lua
     local opts = { buffer = 0 }
