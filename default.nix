@@ -28,6 +28,8 @@ let
     p: map (x: p."${x}") treesitterGrammars
   );
 
+  # TODO: discriminate on optional or start plugins.
+  # will need to do a partition.
   atelierPlugins = import ./pkgs/plugins.nix { inherit pkgs; };
 
 in
