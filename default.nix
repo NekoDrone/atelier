@@ -168,6 +168,9 @@ in
       tree-sitter
       nixfmt
       lazygit
+      typescript-language-server
+      vscode-langservers-extracted
+      tailwindcss-language-server
     ];
   };
 }

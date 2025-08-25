@@ -35,6 +35,7 @@ vim.diagnostic.config({
 })
 
 -- enable each lsp here
+-- lua
 vim.lsp.enable("lua_ls")
 vim.lsp.config("lua_ls", {
     settings = {
@@ -52,3 +53,21 @@ vim.lsp.config("lua_ls", {
         },
     },
 })
+
+-- typescript
+vim.lsp.enable("ts_ls")
+
+-- html
+vim.lsp.enable("html")
+
+-- css
+vim.lsp.enable("cssls")
+
+-- json
+vim.lsp.enable("jsonls")
+
+-- eslint
+vim.lsp.enable("eslint")
+
+-- tailwind
+vim.lsp.enable("tailwindcss")
