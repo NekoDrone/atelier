@@ -61,6 +61,7 @@ in
         lualine-nvim
         fidget-nvim
         bufferline-nvim
+        cord-nvim
       ]
       ++ (with atelierPlugins; [
         beacon-nvim
