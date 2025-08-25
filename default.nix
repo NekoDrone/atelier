@@ -65,6 +65,7 @@ in
       ]
       ++ (with atelierPlugins; [
         beacon-nvim
+        nivvie-nvim
       ]);
 
     optPlugins = with pkgs.vimPlugins; [

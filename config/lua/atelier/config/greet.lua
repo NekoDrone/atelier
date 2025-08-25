@@ -18,6 +18,7 @@ dashboard.section.header.val = {
 }
 
 dashboard.section.buttons.val = {
+    dashboard.button("CTRL sr", "  Restore session...", "<C-s><C-r>"),
     dashboard.button("SPC eq", "  Open file browser..."),
     dashboard.button("SPC FF", "  Search project directory..."),
     dashboard.button("SPC GG", "  Open commits menu..."),

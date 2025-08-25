@@ -37,7 +37,7 @@ vim.keymap.set(
 )
 
 -- toggleterm
-local function set_terminal_keymaps() 
+local function set_terminal_keymaps()
     local opts = { buffer = 0 }
     vim.keymap.set("t", "<C-w>", [[<C-\><C-n><Cmd>ToggleTerm<CR><Cmd>Neotree<CR>]], opts)
     vim.keymap.set("t", "<C-h>", [[<Cmd>wincmd h<CR>]], opts)
@@ -91,3 +91,6 @@ vim.keymap.set("n", "<C-q>", "<cmd>lua Keymap_close_curr_buf()<CR>", { desc = "c
 -- TODO: toggle buffer diagnostics
 -- TODO: symbols
 -- TODO: basically the relevant configs in github.com/folke/trouble.nvim
+
+-- nivvie
+vim.keymap.set("n", "<C-s><C-r>", "<cmd>Nivvie restore<cr><cmd>Neotree<cr>", { desc = "restore nivvie session" })
