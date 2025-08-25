@@ -1,7 +1,7 @@
 return {
     "refactoring.nvim",
     event = "DeferredUIEnter",
-    after = function ()
-        require("refactoring").setup()
-    end
+    after = function()
+        require("refactoring").setup({})
+    end,
 }

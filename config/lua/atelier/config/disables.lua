@@ -6,7 +6,7 @@ vim.g.loaded_netrwPlugin = 1
 -- disable showing mode as we have lualine
 vim.opt.showmode = false
 
--- relevant shortmess 
+-- relevant shortmess
 vim.opt.shortmess:append("W")
 vim.opt.shortmess:append("I")
 vim.opt.shortmess:append("S")

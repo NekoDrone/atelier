@@ -1,4 +1,3 @@
-
 -- add treesitter file types here
 -- don't forget to install the grammar in the default.nix file!
 vim.api.nvim_create_autocmd("FileType", {
@@ -6,7 +5,7 @@ vim.api.nvim_create_autocmd("FileType", {
         "lua",
         "nix",
         "vim",
-        "bash"
+        "bash",
     },
     callback = function()
         vim.treesitter.start()
