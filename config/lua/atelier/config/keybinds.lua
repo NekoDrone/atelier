@@ -38,6 +38,7 @@ vim.keymap.set(
 
 -- toggleterm
 function set_terminal_keymaps()
+local function set_terminal_keymaps()
     -- TODO: shift to config/keybinds.lua
     local opts = { buffer = 0 }
     vim.keymap.set("t", "<C-w>", [[<C-\><C-n><Cmd>ToggleTerm<CR><Cmd>Neotree<CR>]], opts)
