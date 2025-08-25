@@ -69,6 +69,9 @@ vim.keymap.set(
 )
 vim.keymap.set("n", "];", "<cmd>lua require('dropbar.api').select_next_context()<CR>", { desc = "Select next context" })
 
+-- refactoring
+-- TODO: actually we should just build a UI
+
 -- lspsaga
 -- TODO: code_action
 -- TODO: definition
