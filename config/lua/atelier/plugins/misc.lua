@@ -24,4 +24,11 @@ return {
             })
         end,
     },
+    {
+        "trouble.nvim",
+        event = "LspAttach",
+        after = function()
+            require("trouble").setup()
+        end,
+    },
 }
