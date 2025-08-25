@@ -13,6 +13,5 @@ return {
             },
             current_line_blame_formatter = "<summary> by <author>, <author_time:%R>",
         })
-        vim.keymap.set("n", "<leader>GB", gitsigns.toggle_current_line_blame, {})
     end,
 }
