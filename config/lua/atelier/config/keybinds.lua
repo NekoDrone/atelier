@@ -5,7 +5,7 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<Esc>", "<cmd>noh<cr>")
 
 -- my commands (see config/commands.lua)
-vim.keymap.set("n", "<C-s>", "<cmd>W<CR>")
+vim.keymap.set("n", "<leader>S", "<cmd>W<CR>")
 
 -- neo-tree
 vim.keymap.set("n", "<leader>eq", "<cmd>Neotree action=focus<cr><cmd>Neotree<CR>", {})
@@ -94,3 +94,9 @@ vim.keymap.set("n", "<C-q>", "<cmd>lua Keymap_close_curr_buf()<CR>", { desc = "c
 
 -- nivvie
 vim.keymap.set("n", "<C-s><C-r>", "<cmd>Nivvie restore<cr><cmd>Neotree<cr>", { desc = "restore nivvie session" })
+vim.keymap.set(
+    "n",
+    "<leader><C-s><C-q>",
+    "<cmd>Neotree close<cr><cmd>WA<cr><cmd>Nivvie save<cr><cmd>qall<cr>",
+    { desc = "save nivvie session and and write all" }
+)

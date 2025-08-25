@@ -1,10 +1,10 @@
 return {
     "nivvie.nvim",
     lazy = false,
-    after = function ()
+    after = function()
         require("nivvie").setup({
             autorestore = false,
-            autosave = true,
+            autosave = false,
         })
-    end
+    end,
 }
