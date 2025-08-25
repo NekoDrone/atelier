@@ -69,6 +69,13 @@ vim.keymap.set(
 )
 vim.keymap.set("n", "];", "<cmd>lua require('dropbar.api').select_next_context()<CR>", { desc = "Select next context" })
 
+-- bufferline
+function Keymap_close_curr_buf()
+    require("atelier.lib.close_file").close_buffer_if_writable(0)
+end
+
+vim.keymap.set("n", "<C-q>", "<cmd>lua Keymap_close_curr_buf()<CR>", { desc = "close current buffer", noremap = true })
+
 -- refactoring
 -- TODO: actually we should just build a UI
 
