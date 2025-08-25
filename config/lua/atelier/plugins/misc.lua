@@ -8,8 +8,19 @@ return {
     {
         "nvim-autopairs",
         event = "DeferredUIEnter",
-        after = function ()
+        after = function()
             require("nvim-autopairs").setup({})
-        end
+        end,
+    },
+    {
+        "beacon.nvim",
+        event = "DeferredUIEnter",
+        after = function()
+            require("beacon").setup({
+                enabled = true,
+                winblend = 60,
+                width = 30,
+            })
+        end,
     },
 }

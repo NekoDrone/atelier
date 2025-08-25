@@ -15,7 +15,7 @@ return {
             },
             float = {
                 solid = false,
-                transparent = false,
+                transparent = true,
             },
             term_colors = true,
             custom_highlights = function(colors)
@@ -40,6 +40,7 @@ return {
                 telescope = {
                     enabled = false,
                 },
+                beacon = true,
             },
         })
     end,

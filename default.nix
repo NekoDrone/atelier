@@ -28,6 +28,8 @@ let
     p: map (x: p."${x}") treesitterGrammars
   );
 
+  atelierPlugins = import ./pkgs/plugins.nix { inherit pkgs; };
+
 in
 {
   default = gift-wrap.legacyPackages.${pkgs.system}.wrapNeovim {
@@ -44,17 +46,22 @@ in
     ];
 
     userConfig = ./config;
- 
-    startPlugins = with pkgs.vimPlugins; [
-      plenary-nvim
-      nui-nvim
-      my_treesitter
-      nvim-lspconfig
-      lz-n
-      neo-tree-nvim
-      lualine-nvim
-      fidget-nvim
-    ];
+
+    startPlugins =
+      with pkgs.vimPlugins;
+      [
+        plenary-nvim
+        nui-nvim
+        my_treesitter
+        nvim-lspconfig
+        lz-n
+        neo-tree-nvim
+        lualine-nvim
+        fidget-nvim
+      ]
+      ++ (with atelierPlugins; [
+        beacon-nvim
+      ]);
 
     optPlugins = with pkgs.vimPlugins; [
       none-ls-nvim
