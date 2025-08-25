@@ -86,3 +86,9 @@ vim.keymap.set("n", "<C-q>", "<cmd>lua Keymap_close_curr_buf()<CR>", { desc = "c
 -- TODO: hover
 -- TODO: outline
 -- TODO: rename
+
+-- trouble.nvim
+-- TODO: toggle diagnostics
+-- TODO: toggle buffer diagnostics
+-- TODO: symbols
+-- TODO: basically the relevant configs in github.com/folke/trouble.nvim
