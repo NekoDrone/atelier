@@ -83,6 +83,7 @@ in
       refactoring-nvim
       lspsaga-nvim
       trouble-nvim
+      todo-comments-nvim
     ];
 
     extraPackages = with pkgs; [
