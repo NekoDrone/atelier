@@ -1,12 +1,12 @@
 return {
     "lspsaga.nvim",
     event = "LspAttach",
-    after = function ()
+    after = function()
         local test = {}
         require("lspsaga").setup({
             symbol_in_winbar = {
                 enable = false,
-            }
+            },
         })
-    end
+    end,
 }
