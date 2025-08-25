@@ -2,14 +2,7 @@ return {
     "bufferline.nvim",
     lazy = false,
     after = function()
-        local function close_handler(buf_id)
-            if buf_id ~= vim.api.nvim_get_current_buf() then
-                vim.api.nvim_buf_call(buf_id, function()
-                    vim.cmd("W")
-                end)
-                vim.api.nvim_buf_delete(buf_id, { force = true })
-            end
-        end
+        local close_handler = require("atelier.lib.close_file").close_buffer_prevent_current
 
         require("bufferline").setup({
             options = {
