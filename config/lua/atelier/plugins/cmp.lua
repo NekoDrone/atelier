@@ -6,7 +6,6 @@ return {
             keymap = {
                 ["<Tab>"] = { "accept", "fallback" },
                 ["<S-Tab>"] = { "select_next", "fallback" },
-                ["<CR>"] = { "accept", "fallback" },
             },
             completion = {
                 menu = {
@@ -45,8 +44,17 @@ return {
                             },
                         },
                         columns = {
-                            { "kind_icon", "label", "label_description", gap = 1 },
-                            { "kind", "source_name", gap = 1 },
+                            {
+                                "kind_icon",
+                                "label",
+                                "label_description",
+                                gap = 1,
+                            },
+                            {
+                                "kind",
+                                "source_name",
+                                gap = 1,
+                            },
                         },
                     },
                     border = "rounded",
