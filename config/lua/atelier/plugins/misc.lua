@@ -20,6 +20,7 @@ return {
                 enabled = true,
                 winblend = 60,
                 width = 30,
+                min_jump = 1, -- guarantees that we get the beacon every jump
             })
         end,
     },
