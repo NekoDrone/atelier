@@ -81,6 +81,7 @@ in
       nvim-autopairs
       dropbar-nvim
       refactoring-nvim
+      lspsaga-nvim
     ];
 
     extraPackages = with pkgs; [

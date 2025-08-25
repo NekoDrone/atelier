@@ -68,3 +68,11 @@ vim.keymap.set(
     { desc = "Go to start of current context" }
 )
 vim.keymap.set("n", "];", "<cmd>lua require('dropbar.api').select_next_context()<CR>", { desc = "Select next context" })
+
+-- lspsaga
+-- TODO: code_action
+-- TODO: definition
+-- TODO: finder
+-- TODO: hover
+-- TODO: outline
+-- TODO: rename
