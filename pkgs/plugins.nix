@@ -1,3 +1,7 @@
+# if a plugin isn't found in nixpkgs.vimPlugins,
+# add to this list and then also do the same in the default.nix
+#
+# currently, it assumed that plugins added here are optPlugins.
 { pkgs, ... }:
 
 {
