@@ -157,6 +157,7 @@ in
       lspsaga-nvim
       trouble-nvim
       todo-comments-nvim
+      render-markdown-nvim
     ];
 
     extraPackages = with pkgs; [

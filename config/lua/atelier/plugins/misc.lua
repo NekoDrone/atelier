@@ -34,8 +34,17 @@ return {
     {
         "todo-comments.nvim",
         event = "DeferredUIEnter",
-        after = function ()
+        after = function()
             require("todo-comments").setup()
-        end
-    }
+        end,
+    },
+    {
+        "render-markdown.nvim",
+        event = "DeferredUIEnter",
+        after = function()
+            require("render-markdown").setup({
+                completions = { lsp = { enabled = true } },
+            })
+        end,
+    },
 }
