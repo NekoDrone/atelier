@@ -96,7 +96,7 @@ vim.keymap.set("n", "<C-q>", "<cmd>lua Keymap_close_curr_buf()<CR>", { desc = "c
 vim.keymap.set("n", "<C-s><C-r>", "<cmd>Nivvie restore<cr><cmd>Neotree<cr>", { desc = "restore nivvie session" })
 vim.keymap.set(
     "n",
-    "<leader><C-s><C-q>",
+    "<leader>SQ",
     "<cmd>Neotree close<cr><cmd>WA<cr><cmd>Nivvie save<cr><cmd>qall<cr>",
     { desc = "save nivvie session and and write all" }
 )
