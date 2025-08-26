@@ -47,4 +47,36 @@ return {
             })
         end,
     },
+    {
+        "nvim-colorizer.lua",
+        event = "DeferredUIEnter",
+        after = function()
+            require("colorizer").setup({
+                user_default_options = {
+                    names = true,
+                    RGB = true,
+                    RGBA = true,
+                    RRGGBB = true,
+                    RRGGBBAA = true,
+                    AARRGGBB = true,
+                    rgb_fn = true,
+                    hsl_fn = true,
+                    css_fn = true,
+                    tailwind = "both",
+                    tailwind_opts = {
+                        update_names = true,
+                    },
+                    sass = {
+                        enable = true,
+                        parsers = {
+                            "css",
+                        },
+                    },
+                    xterm = true,
+                },
+            })
+            require("colorizer").attach_to_buffer(0, { mode = "background", css = true })
+            require("colorizer").detach_from_buffer(0, { mode = "virtualtext", css = true })
+        end,
+    },
 }
