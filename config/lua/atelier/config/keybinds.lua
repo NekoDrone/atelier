@@ -91,7 +91,8 @@ vim.keymap.set("n", "<C-q>", "<cmd>lua Keymap_close_curr_buf()<CR>", { desc = "c
 -- TODO: rename
 
 -- trouble.nvim
--- TODO: toggle diagnostics
+vim.keymap.set("n", "<leader>K", "<cmd>Trouble diagnostics toggle",
+    { desc = "find (K)lashes (Trouble diagnostics toggle)" })
 -- TODO: toggle buffer diagnostics
 -- TODO: symbols
 -- TODO: basically the relevant configs in github.com/folke/trouble.nvim
