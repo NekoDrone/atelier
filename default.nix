@@ -159,6 +159,7 @@ in
       todo-comments-nvim
       render-markdown-nvim
       nvim-colorizer-lua
+      markview-nvim
     ];
 
     extraPackages = with pkgs; [
