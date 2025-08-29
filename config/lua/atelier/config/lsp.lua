@@ -57,6 +57,9 @@ local lsp_servers = {
     jsonls = {},
     eslint = {},
     tailwindcss = {},
+    gleam = {},
+    gopls = {},
+    rust_analyzer = {},
 }
 
 for language, config in pairs(lsp_servers) do
