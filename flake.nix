@@ -29,5 +29,7 @@
     in
     {
       packages = atelier;
+
+      homeModules.default = import ./modules/home-manager.nix inputs;
     };
 }
