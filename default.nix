@@ -171,9 +171,14 @@ in
       tree-sitter
       nixfmt
       lazygit
+      # TODO: split language servers configuration into module option
       typescript-language-server
       vscode-langservers-extracted
       tailwindcss-language-server
+      gleam
+      gopls
+      rust-analyzer
+      nil
     ];
   };
 }
