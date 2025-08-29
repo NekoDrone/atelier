@@ -60,6 +60,7 @@ local lsp_servers = {
     gleam = {},
     gopls = {},
     rust_analyzer = {},
+    nil_ls = {},
 }
 
 for language, config in pairs(lsp_servers) do
