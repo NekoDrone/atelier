@@ -34,40 +34,32 @@ vim.diagnostic.config({
     },
 })
 
--- enable each lsp here
--- lua
-vim.lsp.enable("lua_ls")
-vim.lsp.config("lua_ls", {
-    settings = {
-        Lua = {
-            semantic = {
-                enable = false,
-            },
-            diagnostics = {
-                globals = { "vim" },
-            },
-            hint = {
-                enable = true,
-                arrayIndex = "Disable",
+local lsp_servers = {
+    lua_ls = {
+        settings = {
+            Lua = {
+                semantic = {
+                    enable = false,
+                },
+                diagnostics = {
+                    globals = { "vim" },
+                },
+                hint = {
+                    enable = true,
+                    arrayIndex = "Disable",
+                },
             },
         },
     },
-})
+    ts_ls = {},
+    html = {},
+    cssls = {},
+    jsonls = {},
+    eslint = {},
+    tailwindcss = {},
+}
 
--- typescript
-vim.lsp.enable("ts_ls")
-
--- html
-vim.lsp.enable("html")
-
--- css
-vim.lsp.enable("cssls")
-
--- json
-vim.lsp.enable("jsonls")
-
--- eslint
-vim.lsp.enable("eslint")
-
--- tailwind
-vim.lsp.enable("tailwindcss")
+for language, config in pairs(lsp_servers) do
+    vim.lsp.enable(language)
+    vim.lsp.config(language, config)
+end
