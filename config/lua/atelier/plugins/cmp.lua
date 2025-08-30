@@ -59,6 +59,9 @@ return {
                     },
                     border = "rounded",
                 },
+                accept = {
+                    auto_brackets = { enabled = true },
+                },
             },
             sources = {
                 providers = {
