@@ -9,7 +9,9 @@ return {
         "nvim-autopairs",
         event = "DeferredUIEnter",
         after = function()
-            require("nvim-autopairs").setup({})
+            require("nvim-autopairs").setup({
+                map_cr = true,
+            })
         end,
     },
     {
