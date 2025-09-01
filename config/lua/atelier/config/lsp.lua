@@ -51,7 +51,34 @@ local lsp_servers = {
             },
         },
     },
-    ts_ls = {},
+    ts_ls = {
+        settings = {
+            typescript = {
+                inlayHints = {
+                    includeInlayParameterNameHints = "all",
+                    includeInlayParameterNameHintsWhenArgumentMatchesName = false,
+                    includeInlayFunctionParameterTypeHints = true,
+                    includeInlayVariableTypeHints = true,
+                    includeInlayVariableTypeHintsWhenTypeMatchesName = false,
+                    includeInlayPropertyDeclarationTypeHints = true,
+                    includeInlayFunctionLikeReturnTypeHints = true,
+                    includeInlayEnumMemberValueHints = true,
+                },
+            },
+            javascript = {
+                inlayHints = {
+                    includeInlayParameterNameHints = "all",
+                    includeInlayParameterNameHintsWhenArgumentMatchesName = false,
+                    includeInlayFunctionParameterTypeHints = true,
+                    includeInlayVariableTypeHints = true,
+                    includeInlayVariableTypeHintsWhenTypeMatchesName = false,
+                    includeInlayPropertyDeclarationTypeHints = true,
+                    includeInlayFunctionLikeReturnTypeHints = true,
+                    includeInlayEnumMemberValueHints = true,
+                },
+            },
+        },
+    },
     html = {},
     cssls = {},
     jsonls = {},
