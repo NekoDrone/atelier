@@ -55,6 +55,9 @@ local lsp_servers = {
         init_options = {
             preferences = {
                 includePackageJsonAutoImports = "auto",
+                includeCompletionsForModuleExports = true,
+                includeCompletionsForImportStatements = true,
+                importModuleSpecifierPreference = "shortest",
             },
         },
         settings = {
@@ -71,6 +74,9 @@ local lsp_servers = {
                 },
                 preferences = {
                     includePackageJsonAutoImports = "auto",
+                    includeCompletionsForModuleExports = true,
+                    includeCompletionsForImportStatements = true,
+                    importModuleSpecifierPreference = "shortest",
                 },
             },
             javascript = {
