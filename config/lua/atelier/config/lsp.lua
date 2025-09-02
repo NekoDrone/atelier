@@ -52,6 +52,11 @@ local lsp_servers = {
         },
     },
     ts_ls = {
+        init_options = {
+            preferences = {
+                includePackageJsonAutoImports = "auto",
+            },
+        },
         settings = {
             typescript = {
                 inlayHints = {
@@ -63,6 +68,9 @@ local lsp_servers = {
                     includeInlayPropertyDeclarationTypeHints = true,
                     includeInlayFunctionLikeReturnTypeHints = false,
                     includeInlayEnumMemberValueHints = true,
+                },
+                preferences = {
+                    includePackageJsonAutoImports = "auto",
                 },
             },
             javascript = {
