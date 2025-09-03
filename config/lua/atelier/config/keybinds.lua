@@ -83,12 +83,12 @@ vim.keymap.set("n", "<C-q>", "<cmd>lua Keymap_close_curr_buf()<CR>", { desc = "c
 -- TODO: actually we should just build a UI
 
 -- lspsaga
--- TODO: code_action
--- TODO: definition
--- TODO: finder
--- TODO: hover
--- TODO: outline
--- TODO: rename
+vim.keymap.set("n", "<C-.>", "<cmd>Lspsaga code_action<CR>")
+vim.keymap.set("n", "<C-l><C-d>", "<cmd>Lspsaga peek_definition<CR>")
+vim.keymap.set("n", "<C-l><C-f>", "<cmd>Lspsaga finder<CR>")
+vim.keymap.set("n", "<leader>i", "<cmd>Lspsaga hover_doc<CR>")
+vim.keymap.set("n", "<C-l><C-o>", "<cmd>Lspsaga outline<CR>")
+vim.keymap.set("n", "<C-l><C-r>", "<cmd>Lspsaga rename<CR>")
 
 -- trouble.nvim
 vim.keymap.set("n", "<leader>K", "<cmd>Trouble diagnostics toggle", { desc = "find (K)lashes (Trouble diagnostics toggle)" })
