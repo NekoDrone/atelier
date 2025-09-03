@@ -54,10 +54,14 @@ local lsp_servers = {
     ts_ls = {
         init_options = {
             preferences = {
-                includePackageJsonAutoImports = "auto",
+                includePackageJsonAutoImports = "on",
                 includeCompletionsForModuleExports = true,
                 includeCompletionsForImportStatements = true,
-                importModuleSpecifierPreference = "project-relative",
+                importModuleSpecifierPreference = "non-relative",
+                allowTextChangesInNewFiles = true,
+            },
+            suggest = {
+                autoImports = true,
             },
         },
         settings = {
@@ -73,10 +77,14 @@ local lsp_servers = {
                     includeInlayEnumMemberValueHints = true,
                 },
                 preferences = {
-                    includePackageJsonAutoImports = "auto",
+                    includePackageJsonAutoImports = "on",
                     includeCompletionsForModuleExports = true,
                     includeCompletionsForImportStatements = true,
-                    importModuleSpecifierPreference = "project-relative",
+                    importModuleSpecifierPreference = "non-relative",
+                    allowTextChangesInNewFiles = true,
+                },
+                suggest = {
+                    autoImports = true,
                 },
             },
             javascript = {
