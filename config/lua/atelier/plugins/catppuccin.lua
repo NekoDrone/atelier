@@ -12,6 +12,9 @@ return {
             styles = {
                 comments = { "italic" },
                 conditionals = {},
+                booleans = { "italic" },
+                types = { "italic" },
+                keywords = { "italic" },
             },
             float = {
                 solid = false,
@@ -25,6 +28,7 @@ return {
                     ["@boolean.lua"] = { fg = colors.blue },
                     ["@number.lua"] = { fg = colors.blue },
                     ["@variable.member.lua"] = { fg = colors.blue },
+                    LspInlayHint = { bg = colors.base, fg = colors.overlay0, italic = true },
                 }
             end,
             integrations = {
