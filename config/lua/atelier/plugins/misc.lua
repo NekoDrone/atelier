@@ -56,7 +56,7 @@ return {
         after = function()
             require("colorizer").setup({
                 user_default_options = {
-                    names = true,
+                    names = false,
                     RGB = true,
                     RGBA = true,
                     RRGGBB = true,
@@ -75,7 +75,6 @@ return {
                             "css",
                         },
                     },
-                    xterm = true,
                 },
             })
             require("colorizer").attach_to_buffer(0, { mode = "background", css = true })
