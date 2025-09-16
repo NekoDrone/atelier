@@ -158,6 +158,7 @@ let
       render-markdown-nvim
       nvim-colorizer-lua
       markview-nvim
+      nvim-ufo
     ];
 
     extraPackages = with pkgs; [

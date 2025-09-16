@@ -4,6 +4,9 @@ vim.g.mapleader = " "
 -- vim :woozy_face:
 vim.keymap.set("n", "<Esc>", "<cmd>noh<CR>")
 
+-- folds
+vim.keymap.set("n", "<leader>SC", "za")
+
 -- my commands (see config/commands.lua)
 vim.keymap.set("n", "<leader>S", "<cmd>W<CR>")
 
