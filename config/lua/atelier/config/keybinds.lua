@@ -14,7 +14,7 @@ vim.keymap.set("n", "<leader>eq", "<cmd>Neotree action=focus<cr><cmd>Neotree<CR>
 vim.keymap.set("n", "<leader>ff", vim.lsp.buf.format, {})
 
 -- gitsigns
-vim.keymap.set("n", "<leader>GB", "<cmd>Gitsigns toggle_current_line_blame", {})
+vim.keymap.set("n", "<leader>GB", "<cmd>Gitsigns toggle_current_line_blame<CR>", {})
 
 -- telescope
 vim.keymap.set(
@@ -91,7 +91,12 @@ vim.keymap.set("n", "<C-l><C-o>", "<cmd>Lspsaga outline<CR>")
 vim.keymap.set("n", "<C-l><C-r>", "<cmd>Lspsaga rename<CR>")
 
 -- trouble.nvim
-vim.keymap.set("n", "<leader>K", "<cmd>Trouble diagnostics toggle", { desc = "find (K)lashes (Trouble diagnostics toggle)" })
+vim.keymap.set(
+    "n",
+    "<leader>K",
+    "<cmd>Trouble diagnostics toggle<cr>",
+    { desc = "find (K)lashes (Trouble diagnostics toggle)" }
+)
 -- TODO: toggle buffer diagnostics
 -- TODO: symbols
 -- TODO: basically the relevant configs in github.com/folke/trouble.nvim
