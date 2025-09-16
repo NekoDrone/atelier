@@ -2,13 +2,13 @@
 vim.g.mapleader = " "
 
 -- vim :woozy_face:
-vim.keymap.set("n", "<Esc>", "<cmd>noh<cr>")
+vim.keymap.set("n", "<Esc>", "<cmd>noh<CR>")
 
 -- my commands (see config/commands.lua)
 vim.keymap.set("n", "<leader>S", "<cmd>W<CR>")
 
 -- neo-tree
-vim.keymap.set("n", "<leader>eq", "<cmd>Neotree action=focus<cr><cmd>Neotree<CR>", {})
+vim.keymap.set("n", "<leader>eq", "<cmd>Neotree action=focus<CR><cmd>Neotree<CR>", {})
 
 -- null-ls
 vim.keymap.set("n", "<leader>ff", vim.lsp.buf.format, {})
@@ -20,19 +20,19 @@ vim.keymap.set("n", "<leader>GB", "<cmd>Gitsigns toggle_current_line_blame<CR>",
 vim.keymap.set(
     "n",
     "<leader>FF",
-    "<cmd>Neotree<cr><cmd>Telescope find_files<cr>",
+    "<cmd>Neotree<CR><cmd>Telescope find_files<CR>",
     { noremap = true, desc = "telescope find files" }
 )
 vim.keymap.set(
     "n",
     "<leader>/",
-    "<cmd>Neotree<cr><cmd>Telescope find_files<cr>",
+    "<cmd>Neotree<CR><cmd>Telescope find_files<CR>",
     { noremap = true, desc = "telescope find files alt" }
 )
 vim.keymap.set(
     "n",
     "<leader>FG",
-    "<cmd>Neotree<cr><cmd>Telescope live_grep<cr>",
+    "<cmd>Neotree<CR><cmd>Telescope live_grep<CR>",
     { noremap = true, desc = "telescope ripgrep search" }
 )
 
@@ -60,7 +60,7 @@ vim.api.nvim_create_autocmd("TermClose", {
     command = "Neotree",
 })
 
-vim.keymap.set("n", "<C-`>", "<cmd>ToggleTerm<cr>", { desc = "toggle term (wow)" })
+vim.keymap.set("n", "<C-`>", "<cmd>ToggleTerm<CR>", { desc = "toggle term (wow)" })
 
 -- dropbar
 vim.keymap.set("n", "<Leader>;", "<cmd>lua require('dropbar.api').pick()<CR>", { desc = "Pick symbols in winbar" })
@@ -94,7 +94,7 @@ vim.keymap.set("n", "<C-l><C-r>", "<cmd>Lspsaga rename<CR>")
 vim.keymap.set(
     "n",
     "<leader>K",
-    "<cmd>Trouble diagnostics toggle<cr>",
+    "<cmd>Trouble diagnostics toggle<CR>",
     { desc = "find (K)lashes (Trouble diagnostics toggle)" }
 )
 -- TODO: toggle buffer diagnostics
@@ -102,10 +102,10 @@ vim.keymap.set(
 -- TODO: basically the relevant configs in github.com/folke/trouble.nvim
 
 -- nivvie
-vim.keymap.set("n", "<C-s><C-r>", "<cmd>Nivvie restore<cr><cmd>Neotree<cr>", { desc = "restore nivvie session" })
+vim.keymap.set("n", "<C-s><C-r>", "<cmd>Nivvie restore<CR><cmd>Neotree<CR>", { desc = "restore nivvie session" })
 vim.keymap.set(
     "n",
     "<leader>SQ",
-    "<cmd>Neotree close<cr><cmd>WA<cr><cmd>Nivvie save<cr><cmd>qall<cr>",
+    "<cmd>Neotree close<CR><cmd>WA<CR><cmd>Nivvie save<CR><cmd>qall<CR>",
     { desc = "save nivvie session and and write all" }
 )
