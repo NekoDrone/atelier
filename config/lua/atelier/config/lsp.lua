@@ -110,6 +110,7 @@ local lsp_servers = {
     gopls = {},
     rust_analyzer = {},
     nil_ls = {},
+    astro = {},
 }
 
 for language, config in pairs(lsp_servers) do
