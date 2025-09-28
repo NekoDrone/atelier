@@ -178,7 +178,7 @@ let
       gopls
       rust-analyzer
       nil
-      # astro-language-server
+      astro-language-server
     ];
   };
 
