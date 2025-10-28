@@ -207,10 +207,6 @@ local motds = {
         author = "queen mara sov, destiny 2",
     },
     {
-        message = "i'm in denial!!!",
-        author = "lenooby09",
-    },
-    {
         message = "sorry, it's lupus.",
         author = "gregory house",
     },
