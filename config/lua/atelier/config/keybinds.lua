@@ -4,6 +4,17 @@ vim.g.mapleader = " "
 -- vim :woozy_face:
 vim.keymap.set("n", "<Esc>", "<cmd>noh<CR>")
 
+-- lsp typehints
+local function toggle_inlay_type_hints()
+    vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
+end
+vim.keymap.set(
+    "n",
+    "<C-l><C-h>",
+    toggle_inlay_type_hints,
+    { desc = "Toggle inlaid type hints provided by the current file's LSP." }
+)
+
 -- folds
 vim.keymap.set("n", "<leader>SC", "za")
 
