@@ -230,6 +230,10 @@ local motds = {
         message = "to all of our sisters who did not make it. may we carry the light of their torch into another day.",
         author = "katie t.",
     },
+    {
+        message = "awawawawa",
+        author = "harmy <3",
+    },
 }
 
 function M.get_random()
