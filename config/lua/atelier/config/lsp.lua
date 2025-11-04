@@ -59,7 +59,7 @@ local lsp_servers = {
                 includePackageJsonAutoImports = "on",
                 includeCompletionsForModuleExports = true,
                 includeCompletionsForImportStatements = true,
-                importModuleSpecifierPreference = "non-relative",
+                importModuleSpecifier = "non-relative",
                 allowTextChangesInNewFiles = true,
             },
             suggest = {
@@ -82,7 +82,7 @@ local lsp_servers = {
                     includePackageJsonAutoImports = "on",
                     includeCompletionsForModuleExports = true,
                     includeCompletionsForImportStatements = true,
-                    importModuleSpecifierPreference = "non-relative",
+                    importModuleSpecifier = "non-relative",
                     allowTextChangesInNewFiles = true,
                 },
                 suggest = {
