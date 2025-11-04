@@ -53,7 +53,7 @@ local lsp_servers = {
             },
         },
     },
-    ts_ls = {
+    vtsls = {
         init_options = {
             preferences = {
                 includePackageJsonAutoImports = "on",
@@ -127,7 +127,10 @@ local lsp_servers = {
     },
 }
 
+local blink = require("blink.cmp")
+
 for language, config in pairs(lsp_servers) do
+    config.capabilities = blink.get_lsp_capabilities()
     vim.lsp.enable(language)
     vim.lsp.config(language, config)
 end

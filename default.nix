@@ -171,7 +171,7 @@ let
       nixfmt
       lazygit
       # TODO: split language servers configuration into module option
-      typescript-language-server
+      vtsls
       vscode-langservers-extracted
       tailwindcss-language-server
       gleam

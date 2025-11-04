@@ -1,6 +1,6 @@
 return {
     "blink.cmp",
-    event = "DeferredUIEnter",
+    lazy = false,
     after = function()
         require("blink.cmp").setup({
             keymap = {
@@ -21,6 +21,21 @@ return {
                                     return hl
                                 end,
                             },
+                            label = {
+                                highlight = function(ctx)
+                                    local _, hl, _ = require("mini.icons").get("lsp", ctx.kind)
+                                    return hl
+                                end,
+                                ellipsis = true,
+                                width = { fill = true, max = 20 },
+                            },
+                            label_description = {
+                                width = { fill = true, max = 40 },
+                                text = function(ctx)
+                                    return ctx.label_description
+                                end,
+                                highlight = "BlinkCmpLabelDescription",
+                            },
                             kind = {
                                 highlight = function(ctx)
                                     local _, hl, _ = require("mini.icons").get("lsp", ctx.kind)
@@ -30,30 +45,16 @@ return {
                                     return "<" .. ctx.kind .. ">"
                                 end,
                             },
-                            label = {
-                                highlight = function(ctx)
-                                    local _, hl, _ = require("mini.icons").get("lsp", ctx.kind)
-                                    return hl
-                                end,
-                            },
-                            source_name = {
-                                text = function(ctx)
-                                    return "[" .. ctx.source_name .. "]"
-                                end,
-                                highlight = "BlinkCmpSource",
-                            },
                         },
                         columns = {
                             {
                                 "kind_icon",
                                 "label",
-                                "label_description",
                                 gap = 1,
                             },
                             {
+                                "label_description",
                                 "kind",
-                                "source_name",
-                                gap = 1,
                             },
                         },
                     },
