@@ -240,8 +240,8 @@ local motds = {
     },
     {
         message = "fwomps u",
-        author = "lyna"
-    }
+        author = "lyna",
+    },
 }
 
 function M.get_random()
