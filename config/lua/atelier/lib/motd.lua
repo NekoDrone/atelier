@@ -234,6 +234,14 @@ local motds = {
         message = "awawawawa",
         author = "harmy <3",
     },
+    {
+        message = "docker fixes this",
+        author = "lyna",
+    },
+    {
+        message = "fwomps u",
+        author = "lyna",
+    },
 }
 
 function M.get_random()
