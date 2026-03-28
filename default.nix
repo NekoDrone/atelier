@@ -179,6 +179,7 @@ let
       rust-analyzer
       nil
       astro-language-server
+      svelte-language-server
     ];
   };
 
