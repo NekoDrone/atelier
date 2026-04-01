@@ -88,7 +88,7 @@ let
     "python"
     "razor"
     "regex"
-    "robots"
+    "robot"
     "ruby"
     "scss"
     "templ"
@@ -103,7 +103,7 @@ let
   # will need to do a partition.
   atelierPlugins = import ./pkgs/plugins.nix { inherit pkgs; };
 
-  atelier = gift-wrap.legacyPackages.${pkgs.system}.wrapNeovim {
+  atelier = gift-wrap.legacyPackages.${pkgs.stdenv.hostPlatform.system}.wrapNeovim {
     # pretentious i know but this is my neovim config i can do whatever i want
     pname = "atelier";
 
