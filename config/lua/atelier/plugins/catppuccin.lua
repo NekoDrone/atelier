@@ -31,16 +31,15 @@ return {
                     LspInlayHint = { bg = colors.base, fg = colors.overlay0, italic = true },
                 }
             end,
-            integrations = {
-                native_lsp = {
-                    enabled = true,
-                    underlines = {
-                        errors = { "undercurl" },
-                        hints = { "underdotted" },
-                        warnings = { "undercurl" },
-                        information = { "underdotted" },
-                    },
+            lsp_styles = {
+                underlines = {
+                    errors = { "undercurl" },
+                    hints = { "underdotted" },
+                    warnings = { "undercurl" },
+                    information = { "underdotted" },
                 },
+            },
+            integrations = {
                 telescope = {
                     enabled = false,
                 },
