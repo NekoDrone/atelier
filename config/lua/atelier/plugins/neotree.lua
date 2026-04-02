@@ -17,7 +17,9 @@ return {
                     },
                 },
                 hijack_netrw_behavior = "disabled",
+                use_libuv_file_watcher = true,
             },
+            enable_git_status = true,
             default_component_configs = {
                 -- taken from https://github.com/comfysage/ivy/blob/main/config/lua/ivy/plugins/init.lua#L14-L36
                 -- thank you roro you're so cracked and so smart ily
@@ -25,7 +27,7 @@ return {
                     provider = function(icon, node) -- setup a custom icon provider
                         local text, hl
                         local mini_icons = require("mini.icons")
-                        if node.type == "file" then -- if it's a file, set the text/hl
+                        if node.type == "file" then          -- if it's a file, set the text/hl
                             text, hl = mini_icons.get("file", node.name)
                         elseif node.type == "directory" then -- get directory icons
                             text, hl = mini_icons.get("directory", node.name)
@@ -50,6 +52,7 @@ return {
                     folder_empty_open = "",
                     folder_open = "",
                     folder_closed = "",
+                    use_filtered_colors = true,
                 },
             },
         })
