@@ -246,6 +246,22 @@ local motds = {
         message = "there's easier ways to ask me to marry you",
         author = "lyna (10x wife) <3",
     },
+    {
+        message = "im aliern btw",
+        author = "lyna (aliern) <3",
+    },
+    {
+        message = "im oup btw",
+        author = "lyna (ouppy) <3",
+    },
+    {
+        message = "im fawn btw",
+        author = "lyna (fawn) <3",
+    },
+    {
+        message = "call me nix the way my love for you is reproducible",
+        author = "/nix/store/04cj1p0-lyna <3",
+    },
 }
 
 function M.get_random()
