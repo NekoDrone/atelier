@@ -242,6 +242,10 @@ local motds = {
         message = "fwomps u",
         author = "lyna",
     },
+    {
+        message = "there's easier ways to ask me to marry you",
+        author = "lyna (10x wife) <3",
+    },
 }
 
 function M.get_random()
