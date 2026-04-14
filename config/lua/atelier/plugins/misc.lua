@@ -134,4 +134,8 @@ return {
             })
         end,
     },
+    {
+        "mdx.nvim",
+        event = "DeferredUIEnter",
+    },
 }

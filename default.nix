@@ -135,6 +135,7 @@ let
       ++ (with atelierPlugins; [
         beacon-nvim
         nivvie-nvim
+        mdx-nvim
       ]);
 
     optPlugins = with pkgs.vimPlugins; [
@@ -180,6 +181,7 @@ let
       nil
       astro-language-server
       svelte-language-server
+      mdx-language-server
     ];
   };
 

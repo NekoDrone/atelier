@@ -25,4 +25,14 @@
       hash = "sha256-sUHC146fALmpBcyk6yW8uIdBXVzu5oBHuTr/sGMq3sc=";
     };
   };
+  mdx-nvim = pkgs.vimUtils.buildVimPlugin {
+    pname = "mdx.nvim";
+    version = "2026-03-31";
+    src = pkgs.fetchFromGitHub {
+      owner = "davidmh";
+      repo = "mdx.nvim";
+      rev = "c2644328587bbd58eede41b2cd0c1ccc99175661";
+      hash = "sha256-1yFasKL2UKRd/j9nn8mjiFZOs9sR2GKomoCejtL1XIs=";
+    };
+  };
 }
