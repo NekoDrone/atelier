@@ -126,6 +126,7 @@ local lsp_servers = {
         end,
     },
     svelte = {},
+    mdx_analyzer = {},
 }
 
 local blink = require("blink.cmp")
