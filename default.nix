@@ -93,6 +93,7 @@ let
     "scss"
     "templ"
     "tera"
+    "typespec"
   ];
 
   my_treesitter = pkgs.vimPlugins.nvim-treesitter.withPlugins (
@@ -182,6 +183,7 @@ let
       astro-language-server
       svelte-language-server
       mdx-language-server
+      typespec
     ];
   };
 
