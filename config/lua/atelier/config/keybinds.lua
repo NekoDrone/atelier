@@ -20,6 +20,10 @@ vim.keymap.set("n", "<leader>SC", "za")
 
 -- my commands (see config/commands.lua)
 vim.keymap.set("n", "<leader>S", "<cmd>W<CR>")
+vim.keymap.set("n", "<S-Up>", ":m .-2<CR>==", { silent = true })
+vim.keymap.set("n", "<S-Down>", ":m .+1<CR>==", { silent = true })
+vim.keymap.set("v", "<S-Up>", ":m '<-2<CR>gv=gv", { silent = true })
+vim.keymap.set("v", "<S-Down>", ":m '>+1<CR>gv=gv", { silent = true })
 
 -- neo-tree
 vim.keymap.set("n", "<leader>eq", "<cmd>Neotree action=focus<CR><cmd>Neotree<CR>", {})
