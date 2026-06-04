@@ -94,6 +94,7 @@ let
     "templ"
     "tera"
     "typespec"
+    "qmljs"
   ];
 
   my_treesitter = pkgs.vimPlugins.nvim-treesitter.withPlugins (
@@ -184,6 +185,7 @@ let
       svelte-language-server
       mdx-language-server
       typespec
+      kdePackages.qtdeclarative
     ];
   };
 

@@ -58,6 +58,8 @@ vim.api.nvim_create_autocmd("FileType", {
         "tex", -- latex
         "templ",
         "tera",
+
+        "qmljs"
     },
     callback = function()
         vim.treesitter.start()
