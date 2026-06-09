@@ -129,7 +129,7 @@ local lsp_servers = {
     mdx_analyzer = {},
     tsp_server = {},
     qmlls = {
-        cmd = { "qmlls", "-E" },
+        root_markers = { ".qmlls.ini", ".git" },
     },
 }
 
