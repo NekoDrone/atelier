@@ -175,6 +175,7 @@ let
       lazygit
       # TODO: split language servers configuration into module option
       vtsls
+      deno
       vscode-langservers-extracted
       tailwindcss-language-server
       gleam

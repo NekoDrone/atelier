@@ -54,6 +54,15 @@ local lsp_servers = {
         },
     },
     vtsls = {
+        root_dir = function(bufnr, on_dir)
+            if vim.fs.root(bufnr, { "deno.json", "deno.jsonc" }) then
+                return -- Deno project: never call on_dir, so vtsls doesn't attach
+            end
+            local root = vim.fs.root(bufnr, { "package.json", "tsconfig.json", "jsconfig.json", ".git" })
+            if root then
+                on_dir(root)
+            end
+        end,
         init_options = {
             preferences = {
                 includePackageJsonAutoImports = "on",
@@ -99,6 +108,29 @@ local lsp_servers = {
                     includeInlayPropertyDeclarationTypeHints = true,
                     includeInlayFunctionLikeReturnTypeHints = false,
                     includeInlayEnumMemberValueHints = true,
+                },
+            },
+        },
+    },
+
+    denols = {
+        root_dir = function(bufnr, on_dir)
+            local root = vim.fs.root(bufnr, { "deno.json", "deno.jsonc" })
+            if root then
+                on_dir(root)
+            end
+        end,
+        settings = {
+            deno = {
+                enable = true,
+                lint = true,
+                suggest = {
+                    imports = {
+                        hosts = {
+                            ["https://deno.land"] = true,
+                            ["https://jsr.io"] = true,
+                        },
+                    },
                 },
             },
         },
